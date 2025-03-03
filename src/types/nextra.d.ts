@@ -1,5 +1,5 @@
 declare module 'nextra' {
-    const nextra: (options: any) => any;
+    const nextra: (options: unknown) => unknown;
     export default nextra;
   }
   
