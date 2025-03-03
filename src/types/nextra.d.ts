@@ -1,9 +1,13 @@
 declare module 'nextra' {
-  import type { NextConfig } from 'next';
+  import { NextConfig } from 'next';
 
-  /* eslint-disable @typescript-eslint/no-explicit-any */
-  const nextra: (options?: any) => NextConfig;
-  /* eslint-enable @typescript-eslint/no-explicit-any */
+  interface NextraOptions {
+      theme: string;
+      themeConfig: string;
+  }
 
+  type WithNextra = (nextConfig?: NextConfig) => NextConfig;
+
+  const nextra: (options: NextraOptions) => WithNextra;
   export default nextra;
 }
