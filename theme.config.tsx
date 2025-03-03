@@ -5,9 +5,9 @@ import { DocsThemeConfig } from 'nextra-theme-docs';
 const config: DocsThemeConfig = {
   logo: <span>My Nextra Docs</span>,
   project: {
-    link: 'https://github.com/your-repo',
+    link: 'https://opaur.com',
   },
-  docsRepositoryBase: 'https://github.com/your-repo/blob/main',
+  docsRepositoryBase: 'https://opaur.com',
   footer: {
     text: '© 2025 Your Name',
   },
