@@ -1,5 +1,6 @@
 declare module 'nextra' {
-    const nextra: (options: unknown) => unknown;
-    export default nextra;
-  }
-  
+  import type { NextConfig } from 'next';
+
+  const withNextra: (options?: object) => NextConfig;
+  export default withNextra;
+}
